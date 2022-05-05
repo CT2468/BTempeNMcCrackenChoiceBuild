@@ -67,7 +67,6 @@ public class PlayerMovement : MonoBehaviour
             Anim.SetBool("Walking", false);                     //Turn off walking animation when movement stops
         }
 
-
     }
 
     void Jump()
@@ -93,13 +92,15 @@ public class PlayerMovement : MonoBehaviour
     void Crouch()
     {
         //Crouching
-        if (Input.GetKeyDown(KeyCode.LeftShift))         //if user input is S
+        if (Input.GetKeyDown(KeyCode.LeftShift))         //if user input is Shift
         {
-            Anim.SetBool("Crouching", true);
+            Anim.SetBool("Crunching", true);
+
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            Anim.SetBool("Crouching", false);
+            Anim.SetBool("Crunching", false);
+
         }
 
     }
