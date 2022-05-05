@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -105,4 +106,11 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    void OnTriggerEnter2D(Collider other)
+    {
+        if (other.gameObject.CompareTag("Next"))
+        {
+            LoadScene(2);
+        }
+    }
 }
