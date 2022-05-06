@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed, jumpForce;
+    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float jumpForce = 5f;
+    
+    //public float moveSpeed, jumpForce;
 
     public bool Jumping;
 
@@ -28,8 +31,8 @@ public class PlayerMovement : MonoBehaviour
         feet = GetComponent<BoxCollider2D>();
         Renderer = GetComponent<SpriteRenderer>();
 
-        moveSpeed = 5f;
-        jumpForce = 5f;
+        //moveSpeed = 5f;
+        //jumpForce = 5f;
 
         Jumping = true;
     }
@@ -106,11 +109,21 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Next"))
+        if (other.tag == "Next")
         {
-            LoadScene(2);
+            SceneManager.LoadScene(2);
+        }
+
+        if (other.tag == "NextLeft")
+        {
+            SceneManager.LoadScene(3);
+        }
+
+        if (other.tag == "NextRight")
+        {
+            SceneManager.LoadScene(4);
         }
     }
 }

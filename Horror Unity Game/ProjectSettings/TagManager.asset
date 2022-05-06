@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Next
+  - NextLeft
+  - NextRight
   layers:
   - Default
   - TransparentFX
