@@ -8,6 +8,8 @@ TagManager:
   - Next
   - NextLeft
   - NextRight
+  - NextA
+  - NextB
   layers:
   - Default
   - TransparentFX

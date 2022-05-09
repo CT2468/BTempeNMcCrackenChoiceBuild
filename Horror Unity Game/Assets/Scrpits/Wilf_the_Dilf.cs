@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour
+public class Wilf_the_Dilf : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpForce = 5f;
-    
+
     //public float moveSpeed, jumpForce;
 
     public bool Jumping;
@@ -63,12 +63,12 @@ public class PlayerMovement : MonoBehaviour
                 Renderer.flipX = false;
             }
             bool playerHasHorizontalSpeed = Mathf.Abs(RG2D.velocity.x) > Mathf.Epsilon; //set a bool to determine oif the player has horizontal speed
-            Anim.SetBool("Walking", playerHasHorizontalSpeed); //if the player has horizontal speed the walking animation plays
+            Anim.SetBool("Wilf", playerHasHorizontalSpeed); //if the player has horizontal speed the walking animation plays
         }
         else
         {
             RG2D.velocity = new Vector2(0, RG2D.velocity.y);    //stop moving if A or D is not pushed
-            Anim.SetBool("Walking", false);                     //Turn off walking animation when movement stops
+            Anim.SetBool("Wilf", false);                     //Turn off walking animation when movement stops
         }
 
     }
@@ -98,12 +98,12 @@ public class PlayerMovement : MonoBehaviour
         //Crouching
         if (Input.GetKeyDown(KeyCode.LeftShift))         //if user input is Shift
         {
-            Anim.SetBool("Crunching", true);
+            Anim.SetBool("WilfCrunch", true);
 
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            Anim.SetBool("Crunching", false);
+            Anim.SetBool("WilfCrunch", false);
 
         }
 
