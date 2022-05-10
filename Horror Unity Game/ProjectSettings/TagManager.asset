@@ -10,6 +10,7 @@ TagManager:
   - NextRight
   - NextA
   - NextB
+  - End
   layers:
   - Default
   - TransparentFX

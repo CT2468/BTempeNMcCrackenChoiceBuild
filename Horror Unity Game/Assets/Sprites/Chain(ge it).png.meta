@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 70efba6508962ae499eda46f5169edb7
+guid: a5f78209ad30a1341add21cf0cfa429c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3231842720244992111
-    second: Wilf become dilf TREEEEE_0
+      213: 3698831372428497291
+    second: Chain(ge it)_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -35,7 +35,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,7 +49,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -154,13 +154,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wilf become dilf TREEEEE_0
+      name: Chain(ge it)_0
       rect:
         serializedVersion: 2
-        x: 38
-        y: 38
-        width: 44
-        height: 62
+        x: 29
+        y: 0
+        width: 6
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,8 +168,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f68822eb4dfc9dc20800000000000000
-      internalID: 3231842720244992111
+      spriteID: b81dba53983e45330800000000000000
+      internalID: 3698831372428497291
       vertices: []
       indices: 
       edges: []

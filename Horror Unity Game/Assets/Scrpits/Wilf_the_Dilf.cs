@@ -135,5 +135,10 @@ public class Wilf_the_Dilf : MonoBehaviour
         {
             SceneManager.LoadScene(6);
         }
+
+        if (other.tag == "End")
+        {
+            SceneManager.LoadScene(7);
+        }
     }
 }
