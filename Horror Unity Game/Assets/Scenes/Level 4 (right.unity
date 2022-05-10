@@ -123,6 +123,68 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &219065138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 192672706343963819, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+  m_PrefabInstance: {fileID: 705659718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &705659718
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 192672706343963796, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+      propertyPath: m_Name
+      value: Jorge The Scientist(Player)HE IS PROTAGONIST 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 192672706343963819, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 192672706343963819, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.481797
+      objectReference: {fileID: 0}
+    - target: {fileID: 192672706343963819, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9618759
+      objectReference: {fileID: 0}
+    - target: {fileID: 192672706343963819, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.262
+      objectReference: {fileID: 0}
+    - target: {fileID: 192672706343963819, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 192672706343963819, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 192672706343963819, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 192672706343963819, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 192672706343963819, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 192672706343963819, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 192672706343963819, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9013f644108aa424f9a0675d832fed0f, type: 3}
 --- !u!1 &2094829122
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +196,7 @@ GameObject:
   - component: {fileID: 2094829125}
   - component: {fileID: 2094829124}
   - component: {fileID: 2094829123}
+  - component: {fileID: 2094829126}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -159,7 +222,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -176,7 +239,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 2.5297556
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -200,12 +263,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094829122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -6.58, y: -0.64, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2094829126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094829122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82731984340e96447b70f1bc32867d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 219065138}
+  offset: {x: 0, y: 0, z: -3}
+  smoothFactor: 5.6
 --- !u!1 &173672071596260667
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +319,7 @@ Transform:
   - {fileID: 7430320412969447274}
   - {fileID: 2041802601444643019}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1022646896831736499
 GameObject:
@@ -656,6 +734,16 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 2
       m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -8, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 8
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1969,6 +2057,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: b0f7a245b9300154f81794fa8d074fe4, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: d96557216c6e590498d84b4262e7df8b, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: be6e8f4447dcb15448c437c2a6c46715, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 51
     m_Data: {fileID: -7852609077936824258, guid: bec990f168c5bbc4db794f1cd4c49397, type: 3}
@@ -1986,8 +2076,10 @@ Tilemap:
     m_Data: {fileID: -925727782465070098, guid: c0c25375d3478df41828868295ca4023, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 1781841373537168257, guid: 40c9a1ce48792834bbd1557f62c1f7fa, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 78bd7b77f59f68f47a932430e6fcceac, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 154
+  - m_RefCount: 155
     m_Data:
       e00: 1
       e01: 0
@@ -2006,7 +2098,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 154
+  - m_RefCount: 155
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
